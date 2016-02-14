@@ -57,6 +57,13 @@ Launch the command **drupal generate:controller**
      2 - modules/custom/hello/hello.routing.yml
      3 - modules/custom/hello/Tests/Controller/HelloControllerTest.php
 
+Enable and test your new module
+-------------------------------
+
+To enable your new _hello_ module use _drush_ command
+
+    drush en hello
+
 Lanch the builtin web Server with Drupal Console
 
     $ drupal server
