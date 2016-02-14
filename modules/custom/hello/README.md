@@ -57,3 +57,13 @@ Launch the command **drupal generate:controller**
      2 - modules/custom/hello/hello.routing.yml
      3 - modules/custom/hello/Tests/Controller/HelloControllerTest.php
 
+Lanch the builtin web Server with Drupal Console
+
+    $ drupal server
+
+Open your browser at URL:
+
+    http://127.0.0.1:8088/hello/main/world
+
+to access to your new page created with your first module.
+

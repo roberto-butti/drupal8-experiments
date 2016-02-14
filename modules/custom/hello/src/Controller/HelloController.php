@@ -9,6 +9,8 @@ namespace Drupal\hello\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 
+use GuzzleHttp\Client;
+
 /**
  * Class HelloController.
  *
@@ -22,9 +24,13 @@ class HelloController extends ControllerBase {
    *   Return Hello string.
    */
   public function main($name) {
+    $client = new \GuzzleHttp\Client();
+    $res = $client->request('GET', 'http://httpbin.org/get', []);
+
+
     return [
         '#type' => 'markup',
-        '#markup' => $this->t("Implement method: main with parameter(s): $name")
+        '#markup' => $this->t("CONTENT:".$res->getBody())
     ];
   }
 
