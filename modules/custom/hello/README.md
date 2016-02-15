@@ -2,7 +2,7 @@ My first module in Drupal8
 ==========================
 
 
-The easiest way to create a new Module is using Drush and Drupalconsole.
+The easiest way to create a new Module is using Drupalconsole.
 
 Create basic file for our new module
 ------------------------------------
@@ -60,9 +60,9 @@ Launch the command **drupal generate:controller**
 Enable and test your new module
 -------------------------------
 
-To enable your new _hello_ module use _drush_ command
+To enable your new _hello_ module use _drupal_ command
 
-    drush en hello
+    drupal module:install hello
 
 Lanch the builtin web Server with Drupal Console
 
